@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ns-bobby-c.github.io/logbook/blog</id>
+    <id>https://ns-bobby-c.github.io/logbook/logbook/blog</id>
     <title>Robert's Development Logbook Blog</title>
     <updated>2022-01-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://ns-bobby-c.github.io/logbook/blog"/>
+    <link rel="alternate" href="https://ns-bobby-c.github.io/logbook/logbook/blog"/>
     <subtitle>Robert's Development Logbook Blog</subtitle>
-    <icon>https://ns-bobby-c.github.io/logbook/https://github.com/NS-BOBBY-C.png</icon>
+    <icon>https://ns-bobby-c.github.io/logbook/logbook/https://github.com/NS-BOBBY-C.png</icon>
     <entry>
         <title type="html"><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
         <id>/2022/01/24/jest-flush-snapshot-timers</id>
-        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/24/jest-flush-snapshot-timers"/>
+        <link href="https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/24/jest-flush-snapshot-timers"/>
         <updated>2022-01-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I got a warning error which looked like:]]></summary>
         <content type="html"><![CDATA[<p>I got a warning error which looked like:</p><pre><code class="language-error">Warning: It looks like you&#x27;re using the wrong act() around your test interactions.
@@ -53,7 +53,7 @@ export function flushPromisesAndTimersForSnapshot() {
     <entry>
         <title type="html"><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
         <id>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</id>
-        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data"/>
+        <link href="https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data"/>
         <updated>2022-01-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></summary>
         <content type="html"><![CDATA[<p>I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding <code>flushPromisesAndTimers()</code> before <code>waitFor()</code> a testID detection. The component looked something like this:</p><pre><code class="language-tsx">export default function Component(props: Props) {
@@ -124,7 +124,7 @@ export function flushPromisesAndTimers() {
     <entry>
         <title type="html"><![CDATA[Jest: String Matching (Use RegEx)]]></title>
         <id>/2022/01/19/jest-using-regex-in-string-matching</id>
-        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/19/jest-using-regex-in-string-matching"/>
+        <link href="https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/19/jest-using-regex-in-string-matching"/>
         <updated>2022-01-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></summary>
         <content type="html"><![CDATA[<p>While trying to use <code>result.getByText()</code> to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say &quot;1 providers.&quot; The component looked like:</p><pre><code class="language-tsx"> &lt;Typography

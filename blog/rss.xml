@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Robert's Development Logbook Blog</title>
-        <link>https://ns-bobby-c.github.io/logbook/blog</link>
+        <link>https://ns-bobby-c.github.io/logbook/logbook/blog</link>
         <description>Robert's Development Logbook Blog</description>
         <lastBuildDate>Mon, 24 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/blog/2022/01/24/jest-flush-snapshot-timers</link>
+            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/24/jest-flush-snapshot-timers</link>
             <guid>/2022/01/24/jest-flush-snapshot-timers</guid>
             <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I got a warning error which looked like:]]></description>
@@ -52,7 +52,7 @@ export function flushPromisesAndTimersForSnapshot() {
         </item>
         <item>
             <title><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
+            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
             <guid>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</guid>
             <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></description>
@@ -123,7 +123,7 @@ export function flushPromisesAndTimers() {
         </item>
         <item>
             <title><![CDATA[Jest: String Matching (Use RegEx)]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/blog/2022/01/19/jest-using-regex-in-string-matching</link>
+            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/19/jest-using-regex-in-string-matching</link>
             <guid>/2022/01/19/jest-using-regex-in-string-matching</guid>
             <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></description>
