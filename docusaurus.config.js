@@ -9,7 +9,7 @@ const config = {
   title: "Robert's Development Logbook",
   tagline: "Issues? What issues?",
   url: "https://ns-bobby-c.github.io/logbook/",
-  baseUrl: "/",
+  baseUrl: "/logbook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://github.com/NS-BOBBY-C.png",
