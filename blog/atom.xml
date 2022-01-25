@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ns-bobby-c.github.io/logbook/blog</id>
+    <title>Robert's Development Logbook Blog</title>
+    <updated>2022-01-24T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ns-bobby-c.github.io/logbook/blog"/>
+    <subtitle>Robert's Development Logbook Blog</subtitle>
+    <icon>https://ns-bobby-c.github.io/logbook/https://github.com/NS-BOBBY-C.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
+        <id>/2022/01/24/jest-flush-snapshot-timers</id>
+        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/24/jest-flush-snapshot-timers"/>
+        <updated>2022-01-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I got a warning error which looked like:]]></summary>
+        <content type="html"><![CDATA[<p>I got a warning error which looked like:</p><pre><code class="language-error">Warning: It looks like you&#x27;re using the wrong act() around your test interactions.
+Be sure to use the matching version of act() corresponding to your renderer:
+
+// for react-dom:
+import {act} from &#x27;react-dom/test-utils&#x27;;
+// ...
+act(() =&gt; ...);
+
+// for react-test-renderer:
+import TestRenderer from &#x27;react-test-renderer&#x27;;
+const {act} = TestRenderer;
+// ...
+act(() =&gt; ...);
+</code></pre><p>that has also been documented <a href="https://github.com/testing-library/react-hooks-testing-library/issues/516">here</a>. I was able to fix this by adding a similar function <code>flushPromisesAndTimersForSnapshot()</code> and the error messages went away.</p><pre><code class="language-typescript">import { act } from &#x27;@testing-library/react&#x27;;
+import renderer from &#x27;react-test-renderer&#x27;;
+
+export function flushPromisesAndTimers() {
+  return act(
+    () =&gt;
+      new Promise((resolve) =&gt; {
+        setTimeout(resolve, 500);
+        jest.runAllTimers();
+      })
+  );
+}
+
+export function flushPromisesAndTimersForSnapshot() {
+  return renderer.act(
+    () =&gt;
+      new Promise((resolve) =&gt; {
+        setTimeout(resolve, 500);
+        jest.runAllTimers();
+      })
+  );
+}
+</code></pre>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
+        <id>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</id>
+        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data"/>
+        <updated>2022-01-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></summary>
+        <content type="html"><![CDATA[<p>I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding <code>flushPromisesAndTimers()</code> before <code>waitFor()</code> a testID detection. The component looked something like this:</p><pre><code class="language-tsx">export default function Component(props: Props) {
+  const [error, setError] = useState&lt;null | Error&gt;(null);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() =&gt; {
+    const setup = async () =&gt; {
+      setLoading(true);
+      try {
+        const newData = await fetch(&#x27;path/to/data&#x27;);
+        setData(newData);
+      } catch (newError) {
+        setError(newError as Error);
+        handleError(newError as Error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    setup();
+  }, []);
+
+  if (loading || !data) {
+    return (
+      &lt;View style={[styles.container, styles.loading]}&gt;
+        &lt;Loading /&gt;
+      &lt;/View&gt;
+    );
+  }
+
+  return (
+    &lt;View style={styles.container} testID=&quot;ComponentTestID&quot;&gt;
+      &lt;Text&gt;{data}&lt;/Text&gt;
+    &lt;/View&gt;
+  );
+}
+
+</code></pre><p>and the test looked like this:</p><pre><code class="language-typescript">test(&#x27;should render correctly&#x27;, async () =&gt; {
+  const tree = create(
+    &lt;Component /&gt;
+  );
+
+  await flushPromisesAndTimers();
+
+  await waitFor(() =&gt; {
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+});
+</code></pre><p>My flush promises and timers function is from <a href="https://github.com/facebookexperimental/Recoil/pull/1463">this issue</a> and listed on the <a href="https://recoiljs.org/docs/guides/testing/#testing-recoil-state-with-asyncronous-queries-inside-of-a-react-component">recoil docs</a> and looks like this:</p><pre><code class="language-typesript">/**
+ * flushes promises and timers
+ *
+ * @export
+ * @return {*}
+ */
+export function flushPromisesAndTimers() {
+  return act(
+    () =&gt;
+      new Promise((resolve) =&gt; {
+        setTimeout(resolve, 500);
+        jest.runAllTimers();
+      })
+  );
+}
+</code></pre>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Jest: String Matching (Use RegEx)]]></title>
+        <id>/2022/01/19/jest-using-regex-in-string-matching</id>
+        <link href="https://ns-bobby-c.github.io/logbook/blog/2022/01/19/jest-using-regex-in-string-matching"/>
+        <updated>2022-01-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></summary>
+        <content type="html"><![CDATA[<p>While trying to use <code>result.getByText()</code> to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say &quot;1 providers.&quot; The component looked like:</p><pre><code class="language-tsx"> &lt;Typography
+  variant=&quot;caption&quot;
+  color=&quot;textSecondary&quot;
+  data-testid=&quot;approved-by-provider-count&quot;
+&gt;
+  {t(&#x27;Approved by&#x27;)} {abbrNum(supporters.length, 1)}{&#x27; &#x27;}
+  {supporters.length === 1 ? t(&#x27;provider&#x27;) : t(&#x27;providers&#x27;)}
+&lt;/Typography&gt;
+</code></pre><p>and the snapshot was:</p><pre><code class="language-html">&lt;span
+  class=&quot;MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary&quot;
+  data-testid=&quot;approved-by-provider-count&quot;&gt;
+    Approved by
+
+    1
+
+    provider
+&lt;/span&gt;  
+</code></pre><p>I couldn&#x27;t figure out the newlines and spaces in my expect statement. I tried to use a regex to match the string, and it worked correctly! <code>/s</code> matches any whitespace character, including newlines.</p><pre><code class="language-typescript">const expected = /Approved by\s*1\s*provider/;
+const expected1 = /Approved by\s*1\s*providers/;
+expect(result.queryByText(expected1)).not.toBeInTheDocument();
+expect(result.getByText(expected)).toBeInTheDocument();
+</code></pre>]]></content>
+    </entry>
+</feed>
