@@ -136,7 +136,7 @@ var styles = StyleSheet.create({
 
 The iOS instructions are different than the Android instructions because run:ios does not build and run on a physical device. If using a physical device, you might have to configure code signing. I was able to do this by choosing my personal team (not a paid developer account) and removing the push notifications capability. I did have to go into settings to trust the developer certificate, but you shouldn't have this problem if you have a paid developer account. This is found in `Settings --> General --> VPN & Device Management`.
 
-![Screenshot](/static/img//blog/expo.png)
+![Screenshot](/img//blog/expo.png)
 
 ```bash
 cd ios
