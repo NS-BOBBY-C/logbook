@@ -2,14 +2,137 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Robert's Development Logbook Blog</title>
-        <link>https://ns-bobby-c.github.io/logbook/logbook/blog</link>
+        <link>https://robertjcolley.github.io/logbook/logbook/blog</link>
         <description>Robert's Development Logbook Blog</description>
-        <lastBuildDate>Mon, 24 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 13 Feb 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[Building @viro-community/react-viro package]]></title>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/building-viro</link>
+            <guid>/2022/02/13/building-viro</guid>
+            <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The first major change I had to make was to add react native as a dev dependency. Android will not build correctly without it.]]></description>
+            <content:encoded><![CDATA[<p>The first major change I had to make was to add react native as a dev dependency. Android will not build correctly without it.</p><p>After sifting around through the build.gradle, settings.gradle, and android/build.gradle files, I had a realization that there might be certain parts of the android project that are put into different places when the ./prepare_release.sh script is run.</p><p>The next AHA! moment was when I realized that I can install a dependency from a tarball. The package.json for the starter kit looks slightly different:</p><pre><code class="language-json">&quot;dependencies&quot;: {
+  &quot;@viro-community/react-viro&quot;: &quot;../viro/viro-community-react-viro-2.22.0.tgz&quot;,
+  &quot;fsevents&quot;: &quot;^2.3.2&quot;,
+  &quot;react&quot;: &quot;17.0.2&quot;,
+  &quot;react-native&quot;: &quot;0.65.1&quot;
+}
+</code></pre><p>instead of:</p><pre><code class="language-json">&quot;dependencies&quot;: {
+  &quot;@viro-community/react-viro&quot;: &quot;../viro&quot;,
+  &quot;fsevents&quot;: &quot;^2.3.2&quot;,
+  &quot;react&quot;: &quot;17.0.2&quot;,
+  &quot;react-native&quot;: &quot;0.65.1&quot;
+},
+</code></pre><p>This tarball puts everything into the right spot for a local installation, and then the starter-kit builds on android! I had to add the dist folder for the generated JS files so that <code>npm pack</code> would get everything needed.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Developing with ViroCommunity/viro Locally]]></title>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/develop-with-viro-locally</link>
+            <guid>/2022/02/13/develop-with-viro-locally</guid>
+            <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. Set up ViroCommunity/viro]]></description>
+            <content:encoded><![CDATA[<h2>1. Set up ViroCommunity/viro</h2><h3>1.1. Clone ViroCommunity/viro repo</h3><pre><code class="language-bash">gh repo clone ViroCommunity/viro
+</code></pre><h3>1.2. Install dependencies</h3><pre><code class="language-bash">cd viro
+npm install
+</code></pre><h2>2. Set up the Starter Kit</h2><h3>2.1. Clone the starter kit</h3><pre><code class="language-bash">gh repo clone ViroCommunity/starter-kit
+</code></pre><h3>2.2. Install dependencies</h3><pre><code class="language-bash">cd starter-kit
+npm install
+</code></pre><h2>3. (optional) Make changes viro</h2><p>Make changes to the <code>viro</code> folder to fix a bug, add something new, etc.</p><h2>4. Build viro</h2><p>Ensure that your typescript compiles by running the build command.</p><pre><code class="language-bash"># from viro/
+npm run build
+</code></pre><h2>5. Run the &quot;prepare_release.sh&quot; script</h2><p>This script will create a tarball of the files and binaries needed in the viro folder for the dependency to work correctly.</p><pre><code class="language-bash"># from viro/
+./prepare_release.sh
+</code></pre><p>You should have a tarball in the viro folder called <code>viro-community-react-viro-&lt;package.json version&gt;.tgz</code>.</p><h2>6. Install the tarball</h2><pre><code class="language-bash">cd starter-kit
+npm install ../viro/viro-community-react-viro-&lt;package.json version&gt;.tgz
+</code></pre><h2>7. Build the starter kit</h2><h3>iOS</h3><p>If developing on ios, run <code>pod install</code> in the <code>ios</code> folder and then run the starter kit from xCode.</p><h3>Android</h3><p>If developing on android, run <code>npm run android</code> with a device connected.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[RFC and RFT: Expo Starter Kit Instructions]]></title>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/expo-starter-kit-instructions</link>
+            <guid>/2022/02/13/expo-starter-kit-instructions</guid>
+            <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey everyone! I'd like to start testing the expo plugin. I've attached a tarball of the repo, and I'd like our testers to follow these instructions and make sure that everything works correctly.]]></description>
+            <content:encoded><![CDATA[<p>Hey everyone! I&#x27;d like to start testing the expo plugin. I&#x27;ve attached a tarball of the repo, and I&#x27;d like our testers to follow these instructions and make sure that everything works correctly.</p><p>Specifically, I&#x27;d like to test the following:</p><ul><li>iOS: M1 Mac</li><li>iOS: Intel Mac</li><li>Android</li><li>Android with non-default configuration (<a href="https://github.com/ViroCommunity/viro/pull/88#discussion_r805226852">https://github.com/ViroCommunity/viro/pull/88#discussion_r805226852</a>)</li></ul><h2>Instructions</h2><h3>1. Create a new expo project</h3><pre><code class="language-bash">expo init my-project
+</code></pre><h3>2. Install downloaded tarball as a dependency to the project</h3><p>I would recommend keeping the tarball close to the project folder.</p><h4>2.1. NPM</h4><pre><code class="language-bash">npm install --save ../path/to/viro-community-react-viro-2.22.0.tgz
+</code></pre><h4>2.2. Yarn</h4><pre><code class="language-bash">yarn add ../path/to/viro-community-react-viro-2.22.0.tgz
+</code></pre><h3>3. Add the plugin to app.json</h3><pre><code class="language-json">&quot;plugins&quot;: [ &quot;@viro-community/react-viro&quot; ]
+</code></pre><p>OR if testing <a href="https://github.com/ViroCommunity/viro/pull/88#discussion_r805226852">Android with non-default configuration</a></p><pre><code class="language-json">&quot;plugins&quot;: [
+  [
+    &quot;@viro-community/react-viro&quot;,
+    {
+      &quot;androidXrMode&quot;: &quot;GVR&quot;
+    }
+  ]
+],
+</code></pre><h3>4. Generate the ios/android folders</h3><h4>4.1. iOS</h4><pre><code class="language-bash">expo prebuild --clean -p ios --no-install
+cd ios &amp;&amp; pod install
+</code></pre><h4>4.2. Android</h4><pre><code class="language-bash">expo prebuild --clean -p android --no-install
+</code></pre><h3>5. Add changes which use the viro library</h3><p>Replace the contents of App.tsx with the following:</p><pre><code class="language-js">import React, {useState} from &#x27;react&#x27;;
+import {StyleSheet} from &#x27;react-native&#x27;;
+import {
+  ViroARScene,
+  ViroText,
+  ViroConstants,
+  ViroARSceneNavigator,
+} from &#x27;@viro-community/react-viro&#x27;;
+
+const HelloWorldSceneAR = () =&gt; {
+  const [text, setText] = useState(&#x27;Initializing AR...&#x27;);
+
+  function onInitialized(state, reason) {
+    console.log(&#x27;guncelleme&#x27;, state, reason);
+    if (state === ViroConstants.TRACKING_NORMAL) {
+      setText(&#x27;Hello World!&#x27;);
+    } else if (state === ViroConstants.TRACKING_NONE) {
+      // Handle loss of tracking
+    }
+  }
+
+  return (
+    &lt;ViroARScene onTrackingUpdated={onInitialized}&gt;
+      &lt;ViroText
+        text={text}
+        scale={[0.5, 0.5, 0.5]}
+        position={[0, 0, -1]}
+        style={styles.helloWorldTextStyle}
+      /&gt;
+    &lt;/ViroARScene&gt;
+  );
+};
+
+export default () =&gt; {
+  return (
+    &lt;ViroARSceneNavigator
+      autofocus={true}
+      initialScene={{
+        scene: HelloWorldSceneAR,
+      }}
+      style={styles.f1}
+    /&gt;
+  );
+};
+
+var styles = StyleSheet.create({
+  f1: {flex: 1},
+  helloWorldTextStyle: {
+    fontFamily: &#x27;Arial&#x27;,
+    fontSize: 30,
+    color: &#x27;#ffffff&#x27;,
+    textAlignVertical: &#x27;center&#x27;,
+    textAlign: &#x27;center&#x27;,
+  },
+});
+
+</code></pre><h3>6. Build and run the project</h3><h4>6.1. iOS</h4><p>The iOS instructions are different than the Android instructions because run:ios does not build and run on a physical device. If using a physical device, you might have to configure code signing. I was able to do this by choosing my personal team (not a paid developer account) and removing the push notifications capability. I did have to go into settings to trust the developer certificate, but you shouldn&#x27;t have this problem if you have a paid developer account. This is found in <code>Settings --&gt; General --&gt; VPN &amp; Device Management</code>.</p><p><img src="/img//blog/expo.png" alt="Screenshot"/></p><pre><code class="language-bash">cd ios
+xed .
+# use xcode to build the project to a device
+</code></pre><h4>6.2. Android</h4><pre><code class="language-bash">expo run:android
+</code></pre>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/24/jest-flush-snapshot-timers</link>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/01/24/jest-flush-snapshot-timers</link>
             <guid>/2022/01/24/jest-flush-snapshot-timers</guid>
             <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I got a warning error which looked like:]]></description>
@@ -52,7 +175,7 @@ export function flushPromisesAndTimersForSnapshot() {
         </item>
         <item>
             <title><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
             <guid>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</guid>
             <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></description>
@@ -123,7 +246,7 @@ export function flushPromisesAndTimers() {
         </item>
         <item>
             <title><![CDATA[Jest: String Matching (Use RegEx)]]></title>
-            <link>https://ns-bobby-c.github.io/logbook/logbook/blog/2022/01/19/jest-using-regex-in-string-matching</link>
+            <link>https://robertjcolley.github.io/logbook/logbook/blog/2022/01/19/jest-using-regex-in-string-matching</link>
             <guid>/2022/01/19/jest-using-regex-in-string-matching</guid>
             <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></description>
