@@ -8,13 +8,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Robert's Development Logbook",
   tagline: "Issues? What issues?",
-  url: "https://ns-bobby-c.github.io/logbook/",
+  url: "https://robertjcolley.github.io/logbook/",
   baseUrl: "/logbook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://github.com/NS-BOBBY-C.png",
-  organizationName: "NS-BOBBY-C", // Usually your GitHub org/user name.
+  favicon: "https://github.com/robertjcolley.png",
+  organizationName: "robertjcolley", // Usually your GitHub org/user name.
   projectName: "logbook", // Usually your repo name.
+  trailingSlash: false,
 
   presets: [
     [
@@ -24,12 +25,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/NS-BOBBY-C/logbook/edit/main/",
+          editUrl: "https://github.com/robertjcolley/logbook/edit/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/NS-BOBBY-C/logbook/edit/main/",
+          editUrl: "https://github.com/robertjcolley/logbook/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -56,7 +57,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/NS-BOBBY-C/logbook",
+            href: "https://github.com/robertjcolley/logbook",
             label: "GitHub",
             position: "right",
           },
@@ -91,7 +92,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/NS-BOBBY-C",
+                href: "https://github.com/robertjcolley",
               },
             ],
           },
