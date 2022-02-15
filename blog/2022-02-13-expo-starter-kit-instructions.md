@@ -56,15 +56,16 @@ OR if testing [Android with non-default configuration](https://github.com/ViroCo
 
 #### 4.1. iOS
 
+`expo run:ios` will generate the ios/ folder and will run `pod install` in the project.
+
 ```bash
-expo prebuild --clean -p ios --no-install
-cd ios && pod install
+expo run:ios
 ```
 
 #### 4.2. Android
 
 ```bash
-expo prebuild --clean -p android --no-install
+expo run:android
 ```
 
 ### 5. Add changes which use the viro library
@@ -139,9 +140,7 @@ The iOS instructions are different than the Android instructions because run:ios
 ![Screenshot](/img//blog/expo.png)
 
 ```bash
-cd ios
-xed .
-# use xcode to build the project to a device
+expo run:ios -d <my device id | device name>
 ```
 
 #### 6.2. Android
