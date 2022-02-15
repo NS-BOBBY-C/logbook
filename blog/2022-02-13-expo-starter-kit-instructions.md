@@ -59,7 +59,7 @@ OR if testing [Android with non-default configuration](https://github.com/ViroCo
 `expo run:ios` will generate the ios/ folder and will run `pod install` in the project.
 
 ```bash
-expo run:ios
+expo run:ios -d <device id | device name>
 ```
 
 #### 4.2. Android
