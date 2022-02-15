@@ -65,9 +65,8 @@ npm install ../viro/viro-community-react-viro-&lt;package.json version&gt;.tgz
     }
   ]
 ],
-</code></pre><h3>4. Generate the ios/android folders</h3><h4>4.1. iOS</h4><pre><code class="language-bash">expo prebuild --clean -p ios --no-install
-cd ios &amp;&amp; pod install
-</code></pre><h4>4.2. Android</h4><pre><code class="language-bash">expo prebuild --clean -p android --no-install
+</code></pre><h3>4. Generate the ios/android folders</h3><h4>4.1. iOS</h4><p><code>expo run:ios</code> will generate the ios/ folder and will run <code>pod install</code> in the project.</p><pre><code class="language-bash">expo run:ios -d &lt;device id | device name&gt;
+</code></pre><h4>4.2. Android</h4><pre><code class="language-bash">expo run:android
 </code></pre><h3>5. Add changes which use the viro library</h3><p>Replace the contents of App.tsx with the following:</p><pre><code class="language-js">import React, {useState} from &#x27;react&#x27;;
 import {StyleSheet} from &#x27;react-native&#x27;;
 import {
@@ -124,9 +123,7 @@ var styles = StyleSheet.create({
   },
 });
 
-</code></pre><h3>6. Build and run the project</h3><h4>6.1. iOS</h4><p>The iOS instructions are different than the Android instructions because run:ios does not build and run on a physical device. If using a physical device, you might have to configure code signing. I was able to do this by choosing my personal team (not a paid developer account) and removing the push notifications capability. I did have to go into settings to trust the developer certificate, but you shouldn&#x27;t have this problem if you have a paid developer account. This is found in <code>Settings --&gt; General --&gt; VPN &amp; Device Management</code>.</p><p><img src="/img//blog/expo.png" alt="Screenshot"/></p><pre><code class="language-bash">cd ios
-xed .
-# use xcode to build the project to a device
+</code></pre><h3>6. Build and run the project</h3><h4>6.1. iOS</h4><p>The iOS instructions are different than the Android instructions because run:ios does not build and run on a physical device. If using a physical device, you might have to configure code signing. I was able to do this by choosing my personal team (not a paid developer account) and removing the push notifications capability. I did have to go into settings to trust the developer certificate, but you shouldn&#x27;t have this problem if you have a paid developer account. This is found in <code>Settings --&gt; General --&gt; VPN &amp; Device Management</code>.</p><p><img src="/img//blog/expo.png" alt="Screenshot"/></p><pre><code class="language-bash">expo run:ios -d &lt;my device id | device name&gt;
 </code></pre><h4>6.2. Android</h4><pre><code class="language-bash">expo run:android
 </code></pre>]]></content:encoded>
         </item>
