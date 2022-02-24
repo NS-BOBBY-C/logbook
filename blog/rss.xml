@@ -4,9 +4,17 @@
         <title>Robert Colley Blog</title>
         <link>https://robertjcolley.github.io/logbook/blog</link>
         <description>Robert Colley Blog</description>
-        <lastBuildDate>Wed, 23 Feb 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Feb 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[What is my plan?]]></title>
+            <link>https://robertjcolley.github.io/logbook/blog/2022/02/24/what-is-my-plan</link>
+            <guid>/2022/02/24/what-is-my-plan</guid>
+            <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Often times you get asked about "What is your 5 year plan?" and I have NO idea about specifics.]]></description>
+            <content:encoded><![CDATA[<p>Often times you get asked about &quot;What is your 5 year plan?&quot; and I have NO idea about specifics.</p><p>As of right now, I know:</p><h2>1. I want to start my own business</h2><p>I know I can run a successful business. I am very detail oriented and I have a lot of experience &quot;running&quot; a team to create a product. I have made mistakes and have been overextended, but with one sole product and enough time, I know that I can create a product that will be successful.</p><h2>2. I might need to go back to school to get an MBA</h2><p>I don&#x27;t know everything I need to know to start a good business. I can create a decent software product, but I don&#x27;t know how to create a successful business from a software product.</p><h2>3. I don&#x27;t have a good idea for a business that I want to commit to</h2><p>One of the ideas I&#x27;ve had before is a &quot;social wellness&quot; platform. It would be very similar to <a href="https://nextstepgoodlife.com">NextStep GoodLife</a>, but I don&#x27;t really want to make another social media app. I&#x27;ve thought about making a fitness tracking app, but that is a super saturated market and I don&#x27;t want to be in it. I thought about &quot;party tech&quot; but there isn&#x27;t a huge market for scalability - just frat bros and sorority girls in that market. That would include party planning apps, which is somewhat niche. I&#x27;ve also thought about creating a javascript teaching platform, something in crypto, or something else entirely.</p><p>Eesha had an idea to see everything about her health records in one place by connecting portals together. I don&#x27;t know how to monetize this.</p><p>TLDR; Ideas list:</p><ul><li>Create a social wellness platform</li><li>Create a fitness tracking app</li><li>Create a party planning app</li><li>Create a teaching platform</li><li>Create a something in crypto</li><li>Create a health records app</li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Building ViroCore --> ViroReact --> Use in starter kit]]></title>
             <link>https://robertjcolley.github.io/logbook/blog/2022/02/23/building-viro</link>
