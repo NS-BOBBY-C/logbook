@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://robertjcolley.github.io/logbook/logbook/blog</id>
-    <title>Robert's Development Logbook Blog</title>
-    <updated>2022-02-13T00:00:00.000Z</updated>
+    <id>https://robertjcolley.github.io/logbook/blog</id>
+    <title>Robert Colley Blog</title>
+    <updated>2022-02-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://robertjcolley.github.io/logbook/logbook/blog"/>
-    <subtitle>Robert's Development Logbook Blog</subtitle>
-    <icon>https://robertjcolley.github.io/logbook/logbook/https://github.com/robertjcolley.png</icon>
+    <link rel="alternate" href="https://robertjcolley.github.io/logbook/blog"/>
+    <subtitle>Robert Colley Blog</subtitle>
+    <icon>https://robertjcolley.github.io/logbook/img/avatar.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Building ViroCore --> ViroReact --> Use in starter kit]]></title>
+        <id>/2022/02/23/building-viro</id>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/02/23/building-viro"/>
+        <updated>2022-02-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I am assuming that you have your directories set up with viro, virocore and the starter-kit as follows:]]></summary>
+        <content type="html"><![CDATA[<p>I am assuming that you have your directories set up with <code>viro</code>, <code>virocore</code> and the <code>starter-kit</code> as follows:</p><p><img src="/img/blog/2022-02-23-building-viro/directories.png" alt="directories"/></p><h2>1. Build ViroCore</h2><h3>(iOS) Building the renderer to be used in react-viro platform</h3><h3>1.1. Make sure you followed through steps 1 - 3 mentioned in the android section</h3><h3>1.2. Execute the following commands to install pods from <code>Podfile</code></h3><pre><code class="language-bash"># in virocore/
+cd ios
+pod install
+</code></pre><h3>1.3. Open <code>ViroRenderer.xcworkspace</code> in Xcode. Build scheme <code>ViroKit</code> with Build Configuration set to <code>Release</code> and target set to <code>Generic iOS Device</code>.</h3><p><img src="/img/blog/2022-02-23-building-viro/virocore.png" alt="directories"/></p><p><strong>Note:</strong></p><p>If you want the ability to run on Simulator, change target to any of the <code>iOS Simulator</code> targets instead of <code>Generic iOS Device</code>. If the Xcode build succeeded, you should see a bunch of new files copied over in <code>viro/ios/dist/</code> folder in the viro repo you cloned earlier.</p><h2>2. Build ViroReact</h2><h3>2.1. Execute the following commands to install pods from <code>Podfile</code></h3><pre><code class="language-bash"># in viro/
+cd ios
+pod install
+</code></pre><h3>2.2. Open <code>ViroReact.xcworkspace</code> in Xcode. Build scheme <code>ViroReact</code> with Build Configuration set to <code>Release</code> and target set to <code>Generic iOS Device</code>.</h3><p><img src="/img/blog/2022-02-23-building-viro/viroreact.png" alt="directories"/></p><p>This should generate more files in the ios/dist/ folder.</p><h3>2.3. Install pods</h3><p>I don&#x27;t know if this is required, but I&#x27;m doing it anyways</p><pre><code class="language-bash"># in viro/
+cd ios
+pod install
+</code></pre><h3>2.4. Bundle the ViroReact project into a tarball</h3><pre><code class="language-bash">yarn bundle
+</code></pre><h2>3. Use in starter kit</h2><h3>3.1. Clear the yarn cache of the tarball</h3><pre><code class="language-bash"># I know, this cleans the entire cache. 
+# yarn cache clean @viro-community/react-viro doesn&#x27;t properly clear the tarball from the cache.
+yarn cache clean
+</code></pre><h3>3.2. install dependencies</h3><pre><code class="language-bash"># in starter-kit/
+yarn install
+
+yarn add ../viro/viro-community-react-viro-&lt;version&gt;.tgz
+
+cd ios
+pod install
+</code></pre><h3>3.3. Run the starter kit</h3>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding back GVR on iOS for Viro]]></title>
+        <id>/2022/02/22/gvr-ios</id>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/02/22/gvr-ios"/>
+        <updated>2022-02-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[VR was removed on iOS in the last few months, but it's still a huge part of the ecosystem. This is supported on Android, and we're working on adding it back to iOS. This entry records my progress and troubleshooting.]]></summary>
+        <content type="html"><![CDATA[<p>VR was removed on iOS in the last few months, but it&#x27;s still a huge part of the ecosystem. This is supported on Android, and we&#x27;re working on adding it back to iOS. This entry records my progress and troubleshooting.</p><h2>PR</h2><p>The pull request is <a href="https://github.com/ViroCommunity/viro/pull/73">here</a>. I had to filter .pngs, .strings, and .bin files out of the PR so I could even load the page. This PR is a bit of a mess and I think there is work which has already been done which is duplicated here. <code>static_lib/</code> has already been removed.</p><h2>Looking around</h2><p>There is some commented out code</p><h2>Discussion with Ed</h2><h3>Todo</h3><ol><li>Rebuild virocore</li></ol><p>[https://github.com/ViroCommunity/virocore#ios-building-the-renderer-to-be-used-in-react-viro-platform]<!-- -->(building virocore to be used in react-viro).</p><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" disabled=""/> <!-- -->Having trouble doing this. It seems that ios/dist does not get completely regenerated when ViroKit is rebuilt. I&#x27;m not sure why!</li></ul><ol start="2"><li>uncomment references</li></ol><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <!-- -->should be done!</li></ul><ol start="3"><li>Distribute virocore with cocoa pods</li></ol><p>This is the part to figure out.</p><ul><li><a href="https://cocoapods.org/">https://cocoapods.org/</a></li><li><a href="https://guides.cocoapods.org/making/getting-setup-with-trunk.html">https://guides.cocoapods.org/making/getting-setup-with-trunk.html</a></li></ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Building @viro-community/react-viro package]]></title>
         <id>/2022/02/13/building-viro</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/building-viro"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/02/13/building-viro"/>
         <updated>2022-02-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The first major change I had to make was to add react native as a dev dependency. Android will not build correctly without it.]]></summary>
         <content type="html"><![CDATA[<p>The first major change I had to make was to add react native as a dev dependency. Android will not build correctly without it.</p><p>After sifting around through the build.gradle, settings.gradle, and android/build.gradle files, I had a realization that there might be certain parts of the android project that are put into different places when the ./prepare_release.sh script is run.</p><p>The next AHA! moment was when I realized that I can install a dependency from a tarball. The package.json for the starter kit looks slightly different:</p><pre><code class="language-json">&quot;dependencies&quot;: {
@@ -30,7 +66,7 @@
     <entry>
         <title type="html"><![CDATA[Developing with ViroCommunity/viro Locally]]></title>
         <id>/2022/02/13/develop-with-viro-locally</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/develop-with-viro-locally"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/02/13/develop-with-viro-locally"/>
         <updated>2022-02-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[1. Set up ViroCommunity/viro]]></summary>
         <content type="html"><![CDATA[<h2>1. Set up ViroCommunity/viro</h2><h3>1.1. Clone ViroCommunity/viro repo</h3><pre><code class="language-bash">gh repo clone ViroCommunity/viro
@@ -50,7 +86,7 @@ npm install ../viro/viro-community-react-viro-&lt;package.json version&gt;.tgz
     <entry>
         <title type="html"><![CDATA[RFC and RFT: Expo Starter Kit Instructions]]></title>
         <id>/2022/02/13/expo-starter-kit-instructions</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/02/13/expo-starter-kit-instructions"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/02/13/expo-starter-kit-instructions"/>
         <updated>2022-02-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey everyone! I'd like to start testing the expo plugin. I've attached a tarball of the repo, and I'd like our testers to follow these instructions and make sure that everything works correctly.]]></summary>
         <content type="html"><![CDATA[<p>Hey everyone! I&#x27;d like to start testing the expo plugin. I&#x27;ve attached a tarball of the repo, and I&#x27;d like our testers to follow these instructions and make sure that everything works correctly.</p><p>Specifically, I&#x27;d like to test the following:</p><ul><li>iOS: M1 Mac</li><li>iOS: Intel Mac</li><li>Android</li><li>Android with non-default configuration (<a href="https://github.com/ViroCommunity/viro/pull/88#discussion_r805226852">https://github.com/ViroCommunity/viro/pull/88#discussion_r805226852</a>)</li></ul><h2>Instructions</h2><h3>1. Create a new expo project</h3><pre><code class="language-bash">expo init my-project
@@ -130,7 +166,7 @@ var styles = StyleSheet.create({
     <entry>
         <title type="html"><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
         <id>/2022/01/24/jest-flush-snapshot-timers</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/01/24/jest-flush-snapshot-timers"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/01/24/jest-flush-snapshot-timers"/>
         <updated>2022-01-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I got a warning error which looked like:]]></summary>
         <content type="html"><![CDATA[<p>I got a warning error which looked like:</p><pre><code class="language-error">Warning: It looks like you&#x27;re using the wrong act() around your test interactions.
@@ -173,7 +209,7 @@ export function flushPromisesAndTimersForSnapshot() {
     <entry>
         <title type="html"><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
         <id>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data"/>
         <updated>2022-01-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></summary>
         <content type="html"><![CDATA[<p>I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding <code>flushPromisesAndTimers()</code> before <code>waitFor()</code> a testID detection. The component looked something like this:</p><pre><code class="language-tsx">export default function Component(props: Props) {
@@ -244,7 +280,7 @@ export function flushPromisesAndTimers() {
     <entry>
         <title type="html"><![CDATA[Jest: String Matching (Use RegEx)]]></title>
         <id>/2022/01/19/jest-using-regex-in-string-matching</id>
-        <link href="https://robertjcolley.github.io/logbook/logbook/blog/2022/01/19/jest-using-regex-in-string-matching"/>
+        <link href="https://robertjcolley.github.io/logbook/blog/2022/01/19/jest-using-regex-in-string-matching"/>
         <updated>2022-01-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></summary>
         <content type="html"><![CDATA[<p>While trying to use <code>result.getByText()</code> to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say &quot;1 providers.&quot; The component looked like:</p><pre><code class="language-tsx"> &lt;Typography
