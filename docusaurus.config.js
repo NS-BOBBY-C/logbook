@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Robert's Development Logbook",
+  title: "Robert Colley",
   tagline: "Issues? What issues?",
-  url: "https://robertjcolley.github.io/logbook/",
+  url: "https://robertjcolley.github.io/",
   baseUrl: "/logbook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://github.com/robertjcolley.png",
+  favicon: "img/avatar.png",
   organizationName: "robertjcolley", // Usually your GitHub org/user name.
   projectName: "logbook", // Usually your repo name.
   trailingSlash: false,
@@ -43,10 +43,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Development Logbook",
+        title: "Robert Colley",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Robert Colley",
+          src: "img/avatar.png",
         },
         items: [
           {
@@ -69,14 +69,6 @@ const config = {
           {
             title: "Me",
             items: [
-              // {
-              //   label: "Stack Overflow",
-              //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              // },
-              // {
-              //   label: "Discord",
-              //   href: "https://discordapp.com/invite/docusaurus",
-              // },
               {
                 label: "Twitter",
                 href: "https://twitter.com/bob_colley",
@@ -97,7 +89,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Robert Colley. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Robert Colley.`,
       },
       prism: {
         theme: lightCodeTheme,
