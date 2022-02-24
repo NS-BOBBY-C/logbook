@@ -14,7 +14,7 @@ I don't know everything I need to know to start a good business. I can create a 
 
 ## 3. I don't have a good idea for a business that I want to commit to
 
-One of the ideas I've had before is a "social wellness" platform. It would be very similar to [NextStep GoodLife](nextstepgoodlife.com), but I don't really want to make another social media app. I've thought about making a fitness tracking app, but that is a super saturated market and I don't want to be in it. I thought about "party tech" but there isn't a huge market for scalability - just frat bros and sorority girls in that market. That would include party planning apps, which is somewhat niche. I've also thought about creating a javascript teaching platform, something in crypto, or something else entirely.
+One of the ideas I've had before is a "social wellness" platform. It would be very similar to [NextStep GoodLife](https://nextstepgoodlife.com), but I don't really want to make another social media app. I've thought about making a fitness tracking app, but that is a super saturated market and I don't want to be in it. I thought about "party tech" but there isn't a huge market for scalability - just frat bros and sorority girls in that market. That would include party planning apps, which is somewhat niche. I've also thought about creating a javascript teaching platform, something in crypto, or something else entirely.
 
 Eesha had an idea to see everything about her health records in one place by connecting portals together. I don't know how to monetize this.
 
