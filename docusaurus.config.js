@@ -39,6 +39,27 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: "chess-blog",
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: "chess-blog",
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: "./chess-blog",
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -49,13 +70,8 @@ const config = {
           src: "img/avatar.png",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "What is this?",
-          },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/chess-blog", label: "Chess Blog", position: "left" },
           {
             href: "https://github.com/robertjcolley/logbook",
             label: "GitHub",
@@ -81,6 +97,10 @@ const config = {
               {
                 label: "Blog",
                 to: "/blog",
+              },
+              {
+                label: "Chess Blog",
+                to: "/chess-blog",
               },
               {
                 label: "GitHub",
