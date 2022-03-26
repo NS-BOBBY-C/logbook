@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[929],{5154:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"10 Minute vs. measmyself","permalink":"/logbook/chess-blog/2022/03/25/vs-measmyself"}]}')}}]);

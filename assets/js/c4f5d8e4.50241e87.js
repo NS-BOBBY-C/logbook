@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[195],{2841:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var o=n(2263),i=n(7019),l=n(7294);function r(){var e=(0,o.Z)().siteConfig;return l.createElement(i.Z,{title:""+e.title,description:"Logbook for my development issues"},l.createElement("div",null))}}}]);

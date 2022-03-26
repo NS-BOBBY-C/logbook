@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://robertjcolley.github.io/logbook/chess-blog</id>
+    <title>Robert Colley Blog</title>
+    <updated>2022-03-25T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://robertjcolley.github.io/logbook/chess-blog"/>
+    <subtitle>Robert Colley Blog</subtitle>
+    <icon>https://robertjcolley.github.io/logbook/img/avatar.png</icon>
+    <entry>
+        <title type="html"><![CDATA[10 Minute vs. measmyself]]></title>
+        <id>/2022/03/25/vs-measmyself</id>
+        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/25/vs-measmyself"/>
+        <updated>2022-03-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Great game I played where I gobbled up all of his pieces]]></summary>
+        <content type="html"><![CDATA[<p>Here is a great game I played recently at around 500! I&#x27;m white, opponent is black.</p><p>I am proud of the move 26 Bishop E5. This moved allowed me to check the Black King, and collect a rook. This move had a discovered check, which then allowed me to take the other rook without losing my bishop. After collecting both rooks and threatening the knight on b4, my opponent resigned.</p><p><img src="/img/chess/2022-03-25-vs-measmyself/board.gif" alt="game vs measmyself"/></p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
+</feed>
