@@ -1,5 +1,5 @@
 ---
-title: Playing solid chess
+title: Playing Solid Chess
 description: Solid chess game
 authors:
   - name: Robert Colley
