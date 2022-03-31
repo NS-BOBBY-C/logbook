@@ -8,6 +8,22 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[Chasing the King]]></title>
+            <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/chasing-king</link>
+            <guid>/2022/03/31/chasing-king</guid>
+            <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Chased the king around the board and ended up walking him into a MATE!]]></description>
+            <content:encoded><![CDATA[<p>In this game, I kept my cool as the opponent was trying to infiltrate with his queen. I ended up chasing his king around and winning!</p><p><img src="/img/chess/2022-03-31-chasing-king/board.gif" alt="solid game"/></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I Got Murdered]]></title>
+            <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/i-got-murdered</link>
+            <guid>/2022/03/31/i-got-murdered</guid>
+            <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Brutal loss I suffered, and what I learned from it]]></description>
+            <content:encoded><![CDATA[<p>This was a tough game. I got murdered by my opponent. This is called the <a href="https://chesspathways.com/chess-openings/kings-pawn-opening/wayward-queen-attack/">Wayward Queen Attack</a>, and to defend it I had to play Nc6 then g6. This forces the queen back, and then if the queen goes back to e3, I play Nf6.</p><p><img src="/img/chess/2022-03-31-i-got-murdered/board.gif" alt="solid game"/></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Playing Solid Chess 2]]></title>
             <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game-2</link>
             <guid>/2022/03/31/solid-game-2</guid>
