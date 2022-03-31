@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://robertjcolley.github.io/logbook/chess-blog</id>
     <title>Robert Colley Blog</title>
-    <updated>2022-03-25T00:00:00.000Z</updated>
+    <updated>2022-03-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://robertjcolley.github.io/logbook/chess-blog"/>
     <subtitle>Robert Colley Blog</subtitle>
     <icon>https://robertjcolley.github.io/logbook/img/avatar.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Playing solid chess]]></title>
+        <id>/2022/03/31/solid-game</id>
+        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game"/>
+        <updated>2022-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Solid chess game]]></summary>
+        <content type="html"><![CDATA[<p>I&#x27;m proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!</p><p><img src="/img/chess/2022-03-31-solid-game/board.gif" alt="solid game"/></p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Stomping]]></title>
+        <id>/2022/03/28/stomping</id>
+        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/28/stomping"/>
+        <updated>2022-03-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I really liked the checkmate I had on this guy.]]></summary>
+        <content type="html"><![CDATA[<p><img src="/img/chess/2022-03-28-stomping/board.gif" alt="absolute stomping"/></p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[10 Minute vs. measmyself]]></title>
         <id>/2022/03/25/vs-measmyself</id>

@@ -4,9 +4,25 @@
         <title>Robert Colley Blog</title>
         <link>https://robertjcolley.github.io/logbook/chess-blog</link>
         <description>Robert Colley Blog</description>
-        <lastBuildDate>Fri, 25 Mar 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 Mar 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Playing solid chess]]></title>
+            <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game</link>
+            <guid>/2022/03/31/solid-game</guid>
+            <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Solid chess game]]></description>
+            <content:encoded><![CDATA[<p>I&#x27;m proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!</p><p><img src="/img/chess/2022-03-31-solid-game/board.gif" alt="solid game"/></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Stomping]]></title>
+            <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/28/stomping</link>
+            <guid>/2022/03/28/stomping</guid>
+            <pubDate>Mon, 28 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I really liked the checkmate I had on this guy.]]></description>
+            <content:encoded><![CDATA[<p><img src="/img/chess/2022-03-28-stomping/board.gif" alt="absolute stomping"/></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[10 Minute vs. measmyself]]></title>
             <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/25/vs-measmyself</link>
