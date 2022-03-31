@@ -8,7 +8,19 @@
     <subtitle>Robert Colley Blog</subtitle>
     <icon>https://robertjcolley.github.io/logbook/img/avatar.png</icon>
     <entry>
-        <title type="html"><![CDATA[Playing solid chess]]></title>
+        <title type="html"><![CDATA[Playing Solid Chess 2]]></title>
+        <id>/2022/03/31/solid-game-2</id>
+        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game-2"/>
+        <updated>2022-03-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Solid chess game AGAIN]]></summary>
+        <content type="html"><![CDATA[<p>Another incredibly solid game. Did hang a few pawns, but completely destroyed my opponent.</p><p><img src="/img/chess/2022-03-31-solid-game-2/board.gif" alt="solid game"/></p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Playing Solid Chess]]></title>
         <id>/2022/03/31/solid-game</id>
         <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game"/>
         <updated>2022-03-31T00:00:00.000Z</updated>

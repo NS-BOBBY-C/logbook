@@ -8,7 +8,15 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Playing solid chess]]></title>
+            <title><![CDATA[Playing Solid Chess 2]]></title>
+            <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game-2</link>
+            <guid>/2022/03/31/solid-game-2</guid>
+            <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Solid chess game AGAIN]]></description>
+            <content:encoded><![CDATA[<p>Another incredibly solid game. Did hang a few pawns, but completely destroyed my opponent.</p><p><img src="/img/chess/2022-03-31-solid-game-2/board.gif" alt="solid game"/></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Playing Solid Chess]]></title>
             <link>https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game</link>
             <guid>/2022/03/31/solid-game</guid>
             <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
