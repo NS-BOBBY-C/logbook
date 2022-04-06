@@ -9,7 +9,7 @@ const config = {
   title: "Robert Colley",
   tagline: "Issues? What issues?",
   url: "https://robertjcolley.github.io/",
-  baseUrl: "/logbook/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/avatar.png",
