@@ -12,4 +12,4 @@ tags: [chess, chasing, king, queen, 500]
 
 In this game, I kept my cool as the opponent was trying to infiltrate with his queen. I ended up chasing his king around and winning!
 
-![solid game](/img/chess/2022-03-31-chasing-king/board.gif)
+![solid game](/img/chess/2022-03-31-chasing-king.gif)

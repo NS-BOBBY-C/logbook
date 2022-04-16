@@ -15,4 +15,4 @@ Here is a great game I played recently at around 500! I'm white, opponent is bla
 
 I am proud of the move 26 Bishop E5. This moved allowed me to check the Black King, and collect a rook. This move had a discovered check, which then allowed me to take the other rook without losing my bishop. After collecting both rooks and threatening the knight on b4, my opponent resigned.
 
-![game vs measmyself](/img/chess/2022-03-25-vs-measmyself/board.gif)
+![game vs measmyself](/img/chess/2022-03-25-vs-measmyself.gif)

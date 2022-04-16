@@ -58,6 +58,22 @@ const config = {
         path: "./chess-blog",
       },
     ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "exercise-blog",
+        routeBasePath: "exercise-blog",
+        path: "./exercise-blog",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "programming-blog",
+        routeBasePath: "programming-blog",
+        path: "./programming-blog",
+      },
+    ],
   ],
 
   themeConfig:
@@ -72,6 +88,8 @@ const config = {
         items: [
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/chess-blog", label: "Chess Blog", position: "left" },
+          { to: "/programming-blog", label: "Programming Blog", position: "left" },
+          // { to: "/exercise-blog", label: "Exercise Blog", position: "left" },
           {
             href: "https://github.com/robertjcolley/logbook",
             label: "GitHub",
@@ -83,16 +101,28 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Me",
+            title: "My Links",
             items: [
               {
                 label: "Twitter",
                 href: "https://twitter.com/bob_colley",
               },
+              {
+                label: "Instagram",
+                href: "https://instagram.com/robertjcolley",
+              },
+              {
+                label: "Email",
+                href: "mailto:robertcolley04@gmail.com",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/robertjcolley",
+              },
             ],
           },
           {
-            title: "More",
+            title: "Quick Links",
             items: [
               {
                 label: "Blog",
@@ -103,9 +133,13 @@ const config = {
                 to: "/chess-blog",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/robertjcolley",
+                label: "Programming Blog",
+                to: "/programming-blog",
               },
+              // {
+              //   label: "Exercise Blog",
+              //   to: "/exercise-blog",
+              // },
             ],
           },
         ],

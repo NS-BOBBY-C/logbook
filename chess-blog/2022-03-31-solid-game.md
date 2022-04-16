@@ -12,4 +12,4 @@ tags: [chess, solid, 500]
 
 I'm proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!
 
-![solid game](/img/chess/2022-03-31-solid-game/board.gif)
+![solid game](/img/chess/2022-03-31-solid-game.gif)
