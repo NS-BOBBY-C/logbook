@@ -36,8 +36,12 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        googleAnalytics: {
+        gtag: {
           trackingID: "G-5RJ4SEDBKY",
+        },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
         },
       }),
     ],
