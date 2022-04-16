@@ -30,10 +30,14 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/robertjcolley/logbook/edit/main/",
+          blogSidebarTitle: "All posts",
+          blogSidebarCount: "ALL",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        googleAnalytics: {
+          trackingID: "G-5RJ4SEDBKY",
         },
       }),
     ],
@@ -47,15 +51,10 @@ const config = {
          * Required for any multi-instance plugin
          */
         id: "chess-blog",
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
         routeBasePath: "chess-blog",
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
         path: "./chess-blog",
+        blogSidebarTitle: "All posts",
+        blogSidebarCount: "ALL",
       },
     ],
     [
@@ -64,6 +63,8 @@ const config = {
         id: "exercise-blog",
         routeBasePath: "exercise-blog",
         path: "./exercise-blog",
+        blogSidebarTitle: "All posts",
+        blogSidebarCount: "ALL",
       },
     ],
     [
@@ -72,6 +73,8 @@ const config = {
         id: "programming-blog",
         routeBasePath: "programming-blog",
         path: "./programming-blog",
+        blogSidebarTitle: "All posts",
+        blogSidebarCount: "ALL",
       },
     ],
   ],
@@ -88,7 +91,11 @@ const config = {
         items: [
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/chess-blog", label: "Chess Blog", position: "left" },
-          { to: "/programming-blog", label: "Programming Blog", position: "left" },
+          {
+            to: "/programming-blog",
+            label: "Programming Blog",
+            position: "left",
+          },
           // { to: "/exercise-blog", label: "Exercise Blog", position: "left" },
           {
             href: "https://github.com/robertjcolley/logbook",
@@ -110,6 +117,10 @@ const config = {
               {
                 label: "Instagram",
                 href: "https://instagram.com/robertjcolley",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/robert-colley/",
               },
               {
                 label: "Email",
