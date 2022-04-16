@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Robert Colley",
   tagline: "Issues? What issues?",
-  url: "https://robertjcolley.github.io/",
+  url: "https://robertjcolley.com/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
