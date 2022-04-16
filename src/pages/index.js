@@ -79,9 +79,9 @@ export default function Home() {
               justifyContent: "center",
             }}
           >
-            <p style={{ color: "white", marginTop: 100 }}>
-              Developer, blogger, director, soccer-player, runner, advisor,
-              wieght-lifter, chess-player, skiier, friend.
+            <p style={{ color: "white", marginTop: 100, textAlign: "center" }}>
+              Developer, blogger, leader, brother, soccer-player, runner,
+              advisor, weight-lifter, chess-player, son, skiier, friend.
             </p>
           </div>
         </ParallaxLayer>
