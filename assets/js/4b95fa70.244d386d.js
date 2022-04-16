@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[8116],{2033:function(o){o.exports=JSON.parse('{"permalink":"/logbook/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":9,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

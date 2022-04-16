@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Robert Colley Blog</title>
-        <link>https://robertjcolley.github.io/logbook/blog</link>
+        <link>https://robertjcolley.com/blog</link>
         <description>Robert Colley Blog</description>
         <lastBuildDate>Thu, 24 Feb 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[What is my plan?]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/24/what-is-my-plan</link>
+            <link>https://robertjcolley.com/blog/2022/02/24/what-is-my-plan</link>
             <guid>/2022/02/24/what-is-my-plan</guid>
             <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Often times you get asked about "What is your 5 year plan?" and I have NO idea about specifics.]]></description>
@@ -17,7 +17,7 @@
         </item>
         <item>
             <title><![CDATA[Building ViroCore --> ViroReact --> Use in starter kit]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/23/building-viro</link>
+            <link>https://robertjcolley.com/blog/2022/02/23/building-viro</link>
             <guid>/2022/02/23/building-viro</guid>
             <pubDate>Wed, 23 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I am assuming that you have your directories set up with viro, virocore and the starter-kit as follows:]]></description>
@@ -45,7 +45,7 @@ pod install
         </item>
         <item>
             <title><![CDATA[Adding back GVR on iOS for Viro]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/22/gvr-ios</link>
+            <link>https://robertjcolley.com/blog/2022/02/22/gvr-ios</link>
             <guid>/2022/02/22/gvr-ios</guid>
             <pubDate>Tue, 22 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[VR was removed on iOS in the last few months, but it's still a huge part of the ecosystem. This is supported on Android, and we're working on adding it back to iOS. This entry records my progress and troubleshooting.]]></description>
@@ -53,7 +53,7 @@ pod install
         </item>
         <item>
             <title><![CDATA[Building @viro-community/react-viro package]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/13/building-viro</link>
+            <link>https://robertjcolley.com/blog/2022/02/13/building-viro</link>
             <guid>/2022/02/13/building-viro</guid>
             <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[The first major change I had to make was to add react native as a dev dependency. Android will not build correctly without it.]]></description>
@@ -73,7 +73,7 @@ pod install
         </item>
         <item>
             <title><![CDATA[Developing with ViroCommunity/viro Locally]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/13/develop-with-viro-locally</link>
+            <link>https://robertjcolley.com/blog/2022/02/13/develop-with-viro-locally</link>
             <guid>/2022/02/13/develop-with-viro-locally</guid>
             <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[1. Set up ViroCommunity/viro]]></description>
@@ -93,7 +93,7 @@ npm install ../viro/viro-community-react-viro-&lt;package.json version&gt;.tgz
         </item>
         <item>
             <title><![CDATA[RFC and RFT: Expo Starter Kit Instructions]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/02/13/expo-starter-kit-instructions</link>
+            <link>https://robertjcolley.com/blog/2022/02/13/expo-starter-kit-instructions</link>
             <guid>/2022/02/13/expo-starter-kit-instructions</guid>
             <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey everyone! I'd like to start testing the expo plugin. I've attached a tarball of the repo, and I'd like our testers to follow these instructions and make sure that everything works correctly.]]></description>
@@ -173,7 +173,7 @@ var styles = StyleSheet.create({
         </item>
         <item>
             <title><![CDATA[Jest: Flush Promises and Timers with Snapshot Tests]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/01/24/jest-flush-snapshot-timers</link>
+            <link>https://robertjcolley.com/blog/2022/01/24/jest-flush-snapshot-timers</link>
             <guid>/2022/01/24/jest-flush-snapshot-timers</guid>
             <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I got a warning error which looked like:]]></description>
@@ -216,7 +216,7 @@ export function flushPromisesAndTimersForSnapshot() {
         </item>
         <item>
             <title><![CDATA[Jest: Accurate Snapshots When Loading from UseEffect]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
+            <link>https://robertjcolley.com/blog/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</link>
             <guid>/2022/01/20/jest-fixing-bad-snapshots-when-loading-data</guid>
             <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I had a useEffect which fetched data, and I noticed that the snapshot showed the loading spinner when the data was being fetched. I was able to fix this by adding flushPromisesAndTimers() before waitFor() a testID detection. The component looked something like this:]]></description>
@@ -287,7 +287,7 @@ export function flushPromisesAndTimers() {
         </item>
         <item>
             <title><![CDATA[Jest: String Matching (Use RegEx)]]></title>
-            <link>https://robertjcolley.github.io/logbook/blog/2022/01/19/jest-using-regex-in-string-matching</link>
+            <link>https://robertjcolley.com/blog/2022/01/19/jest-using-regex-in-string-matching</link>
             <guid>/2022/01/19/jest-using-regex-in-string-matching</guid>
             <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[While trying to use result.getByText() to find a component, I found that it was not working. My test case was a regression test to make sure that a component could not say "1 providers." The component looked like:]]></description>

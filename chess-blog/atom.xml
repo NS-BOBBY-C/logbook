@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://robertjcolley.github.io/logbook/chess-blog</id>
+    <id>https://robertjcolley.com/chess-blog</id>
     <title>Robert Colley Blog</title>
     <updated>2022-03-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://robertjcolley.github.io/logbook/chess-blog"/>
+    <link rel="alternate" href="https://robertjcolley.com/chess-blog"/>
     <subtitle>Robert Colley Blog</subtitle>
-    <icon>https://robertjcolley.github.io/logbook/img/avatar.png</icon>
+    <icon>https://robertjcolley.com/img/avatar.png</icon>
     <entry>
         <title type="html"><![CDATA[Chasing the King]]></title>
         <id>/2022/03/31/chasing-king</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/chasing-king"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/31/chasing-king"/>
         <updated>2022-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Chased the king around the board and ended up walking him into a MATE!]]></summary>
         <content type="html"><![CDATA[<p>In this game, I kept my cool as the opponent was trying to infiltrate with his queen. I ended up chasing his king around and winning!</p><p><img src="/img/chess/2022-03-31-chasing-king/board.gif" alt="solid game"/></p>]]></content>
@@ -22,7 +22,7 @@
     <entry>
         <title type="html"><![CDATA[I Got Murdered]]></title>
         <id>/2022/03/31/i-got-murdered</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/i-got-murdered"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/31/i-got-murdered"/>
         <updated>2022-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Brutal loss I suffered, and what I learned from it]]></summary>
         <content type="html"><![CDATA[<p>This was a tough game. I got murdered by my opponent. This is called the <a href="https://chesspathways.com/chess-openings/kings-pawn-opening/wayward-queen-attack/">Wayward Queen Attack</a>, and to defend it I had to play Nc6 then g6. This forces the queen back, and then if the queen goes back to e3, I play Nf6.</p><p><img src="/img/chess/2022-03-31-i-got-murdered/board.gif" alt="solid game"/></p>]]></content>
@@ -34,7 +34,7 @@
     <entry>
         <title type="html"><![CDATA[Playing Solid Chess 2]]></title>
         <id>/2022/03/31/solid-game-2</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game-2"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/31/solid-game-2"/>
         <updated>2022-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Solid chess game AGAIN]]></summary>
         <content type="html"><![CDATA[<p>Another incredibly solid game. Did hang a few pawns, but completely destroyed my opponent.</p><p><img src="/img/chess/2022-03-31-solid-game-2/board.gif" alt="solid game"/></p>]]></content>
@@ -46,7 +46,7 @@
     <entry>
         <title type="html"><![CDATA[Playing Solid Chess]]></title>
         <id>/2022/03/31/solid-game</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/31/solid-game"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/31/solid-game"/>
         <updated>2022-03-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Solid chess game]]></summary>
         <content type="html"><![CDATA[<p>I&#x27;m proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!</p><p><img src="/img/chess/2022-03-31-solid-game/board.gif" alt="solid game"/></p>]]></content>
@@ -58,7 +58,7 @@
     <entry>
         <title type="html"><![CDATA[Stomping]]></title>
         <id>/2022/03/28/stomping</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/28/stomping"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/28/stomping"/>
         <updated>2022-03-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I really liked the checkmate I had on this guy.]]></summary>
         <content type="html"><![CDATA[<p><img src="/img/chess/2022-03-28-stomping/board.gif" alt="absolute stomping"/></p>]]></content>
@@ -70,7 +70,7 @@
     <entry>
         <title type="html"><![CDATA[10 Minute vs. measmyself]]></title>
         <id>/2022/03/25/vs-measmyself</id>
-        <link href="https://robertjcolley.github.io/logbook/chess-blog/2022/03/25/vs-measmyself"/>
+        <link href="https://robertjcolley.com/chess-blog/2022/03/25/vs-measmyself"/>
         <updated>2022-03-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Great game I played where I gobbled up all of his pieces]]></summary>
         <content type="html"><![CDATA[<p>Here is a great game I played recently at around 500! I&#x27;m white, opponent is black.</p><p>I am proud of the move 26 Bishop E5. This moved allowed me to check the Black King, and collect a rook. This move had a discovered check, which then allowed me to take the other rook without losing my bishop. After collecting both rooks and threatening the knight on b4, my opponent resigned.</p><p><img src="/img/chess/2022-03-25-vs-measmyself/board.gif" alt="game vs measmyself"/></p>]]></content>
