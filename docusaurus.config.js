@@ -47,9 +47,6 @@ const config = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        /**
-         * Required for any multi-instance plugin
-         */
         id: "chess-blog",
         routeBasePath: "chess-blog",
         path: "./chess-blog",
