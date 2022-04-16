@@ -31,7 +31,7 @@ export default function Home() {
               backgroundColor: "var(--ifm-color-primary-contrast-foreground)",
             }}
           >
-            <h2 style={{ color: "white" }}>Current Goals</h2>
+            <h2 style={{ color: "var(--ifm-color-primary)" }}>Current Goals</h2>
           </div>
         </ParallaxLayer>
         {/* Background */}
