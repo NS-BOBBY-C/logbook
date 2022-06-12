@@ -92,13 +92,13 @@ const config = {
         },
         items: [
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/chess-blog", label: "Chess Blog", position: "left" },
+          { to: "/exercise-blog", label: "Exercise Blog", position: "left" },
           {
             to: "/programming-blog",
             label: "Programming Blog",
             position: "left",
           },
-          // { to: "/exercise-blog", label: "Exercise Blog", position: "left" },
+          { to: "/chess-blog", label: "Chess Blog", position: "left" },
           {
             href: "https://github.com/robertjcolley/logbook",
             label: "GitHub",
