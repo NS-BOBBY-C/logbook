@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[5870],{895:function(e){e.exports=JSON.parse('{"allTagsPath":"/exercise-blog/tags","slug":"/exercise-blog/tags/hills","name":"hills","count":1,"permalink":"/exercise-blog/tags/hills"}')}}]);

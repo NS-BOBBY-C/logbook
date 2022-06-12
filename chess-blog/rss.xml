@@ -4,9 +4,17 @@
         <title>Robert Colley Blog</title>
         <link>https://robertjcolley.com/chess-blog</link>
         <description>Robert Colley Blog</description>
-        <lastBuildDate>Sat, 16 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Brutal Attack]]></title>
+            <link>https://robertjcolley.com/chess-blog/2022/04/18/brutal-attack</link>
+            <guid>/2022/04/18/brutal-attack</guid>
+            <pubDate>Mon, 18 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[During this game, I was able to line all my pieces up and stomp the opponent's king with a back rank checkmate.]]></description>
+            <content:encoded><![CDATA[<p><img src="/img/chess/2022-04-18-brutal-attack.gif" alt="solid game"/></p><p><a href="https://www.chess.com/analysis/game/live/44028852969?tab=analysis">Chess.com Analysis Board</a></p><p>I thought I had blundered the game away when I lost my bishop without thinking. I ended up being able to stack my rooks and my queen and forcing an attack that my opponent couldn&#x27;t defend, and my opponent resigned.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Take My Time]]></title>
             <link>https://robertjcolley.com/chess-blog/2022/04/16/take-my-time</link>

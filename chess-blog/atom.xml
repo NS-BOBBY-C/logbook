@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://robertjcolley.com/chess-blog</id>
     <title>Robert Colley Blog</title>
-    <updated>2022-04-16T00:00:00.000Z</updated>
+    <updated>2022-04-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://robertjcolley.com/chess-blog"/>
     <subtitle>Robert Colley Blog</subtitle>
     <icon>https://robertjcolley.com/img/avatar.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Brutal Attack]]></title>
+        <id>/2022/04/18/brutal-attack</id>
+        <link href="https://robertjcolley.com/chess-blog/2022/04/18/brutal-attack"/>
+        <updated>2022-04-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[During this game, I was able to line all my pieces up and stomp the opponent's king with a back rank checkmate.]]></summary>
+        <content type="html"><![CDATA[<p><img src="/img/chess/2022-04-18-brutal-attack.gif" alt="solid game"/></p><p><a href="https://www.chess.com/analysis/game/live/44028852969?tab=analysis">Chess.com Analysis Board</a></p><p>I thought I had blundered the game away when I lost my bishop without thinking. I ended up being able to stack my rooks and my queen and forcing an attack that my opponent couldn&#x27;t defend, and my opponent resigned.</p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Take My Time]]></title>
         <id>/2022/04/16/take-my-time</id>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[859],{7940:function(e){e.exports=JSON.parse('{"allTagsPath":"/exercise-blog/tags","slug":"/exercise-blog/tags/half","name":"half","count":1,"permalink":"/exercise-blog/tags/half"}')}}]);

@@ -2,13 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://robertjcolley.com/blog</id>
     <title>Robert Colley Blog</title>
-    <updated>2022-04-16T00:00:00.000Z</updated>
+    <updated>2022-06-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://robertjcolley.com/blog"/>
     <subtitle>Robert Colley Blog</subtitle>
     <icon>https://robertjcolley.com/img/avatar.png</icon>
     <entry>
         <title type="html"><![CDATA[About Me]]></title>
+        <id>/2022/06/11/about-me</id>
+        <link href="https://robertjcolley.com/blog/2022/06/11/about-me"/>
+        <updated>2022-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi! My name is Robert Colley. Check out what I'm working on!]]></summary>
+        <content type="html"><![CDATA[<p>Hi! My name is Robert Colley. Check out what I&#x27;m working on!</p><h2>Work</h2><p>I pride myself on using my knowledge and skills in a way where I can make a difference. So far, my young career has been in health and medical technology. I love to lead teams and create products which work by putting the user first. Quality and Functionality over Look and Feel.</p><ul><li>Quality Reps Application (pre-production) coming soon!</li><li>Hologic ThinPrep Genesis Review Station (pre-production)</li></ul><h2>Lifting</h2><p>All time 1RMs:</p><ul><li>Bench: 230 lbs</li><li>Squat: 275lbs</li><li>DeadLift: 405lbs</li><li>OHP: 155 lbs</li></ul><h2>Running</h2><ul><li>I am currently training for a 5k! I just completed a <a href="/exercise-blog/2022/06/11/old-port-half-marathon">Half Marathon</a>.</li></ul><h2>Chess</h2><p><a href="https://www.chess.com/member/bobbycolley">Bobby Colley (bobbycolley) - Chess Profile</a></p><ul><li>Currently rated around 690 ELO</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Outdated About Me]]></title>
         <id>/2022/04/16/about-me</id>
         <link href="https://robertjcolley.com/blog/2022/04/16/about-me"/>
         <updated>2022-04-16T00:00:00.000Z</updated>

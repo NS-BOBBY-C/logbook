@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[3469],{7210:function(o){o.exports=JSON.parse('{"title":"All posts","items":[{"title":"Old Port Half Marathon","permalink":"/exercise-blog/2022/06/11/old-port-half-marathon"}]}')}}]);
