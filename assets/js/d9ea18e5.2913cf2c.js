@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[4855],{6057:function(e){e.exports=JSON.parse('{"allTagsPath":"/chess-blog/tags","slug":"/chess-blog/tags/queen","name":"queen","count":1,"permalink":"/chess-blog/tags/queen"}')}}]);

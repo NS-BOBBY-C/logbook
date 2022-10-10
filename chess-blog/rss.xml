@@ -7,13 +7,19 @@
         <lastBuildDate>Mon, 18 Apr 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <item>
             <title><![CDATA[Brutal Attack]]></title>
             <link>https://robertjcolley.com/chess-blog/2022/04/18/brutal-attack</link>
             <guid>/2022/04/18/brutal-attack</guid>
             <pubDate>Mon, 18 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[During this game, I was able to line all my pieces up and stomp the opponent's king with a back rank checkmate.]]></description>
-            <content:encoded><![CDATA[<p><img src="/img/chess/2022-04-18-brutal-attack.gif" alt="solid game"/></p><p><a href="https://www.chess.com/analysis/game/live/44028852969?tab=analysis">Chess.com Analysis Board</a></p><p>I thought I had blundered the game away when I lost my bishop without thinking. I ended up being able to stack my rooks and my queen and forcing an attack that my opponent couldn&#x27;t defend, and my opponent resigned.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p><img loading="lazy" alt="solid game" src="/assets/images/2022-04-18-brutal-attack-e19edf88e7080f16f40eb31cbace39c8.gif" width="720" height="720" class="img_ev3q"></p><p><a href="https://www.chess.com/analysis/game/live/44028852969?tab=analysis" target="_blank" rel="noopener noreferrer">Chess.com Analysis Board</a></p><p>I thought I had blundered the game away when I lost my bishop without thinking. I ended up being able to stack my rooks and my queen and forcing an attack that my opponent couldn't defend, and my opponent resigned.</p>]]></content:encoded>
+            <category>chess</category>
+            <category>stomp</category>
+            <category>back</category>
+            <category>rank</category>
+            <category>600</category>
         </item>
         <item>
             <title><![CDATA[Take My Time]]></title>
@@ -21,7 +27,11 @@
             <guid>/2022/04/16/take-my-time</guid>
             <pubDate>Sat, 16 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Took my time and won!]]></description>
-            <content:encoded><![CDATA[<p><img src="/img/chess/2022-04-16-take-my-time.gif" alt="solid game"/></p><p><a href="https://www.chess.com/analysis/game/live/43850158209?tab=analysis">Chess.com Analysis Board</a></p><p>Took my time, and really rocked this guy with a quality checkmate. I really liked how my light-squared bishop covered everything for a while, allowing me to move my knight into attack and open up my queen for the final checkmate. I finished the game with about 1 minute on the clock.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p><img loading="lazy" alt="solid game" src="/assets/images/2022-04-16-take-my-time-709888758cc614cb9cc750e294a4241b.gif" width="720" height="720" class="img_ev3q"></p><p><a href="https://www.chess.com/analysis/game/live/43850158209?tab=analysis" target="_blank" rel="noopener noreferrer">Chess.com Analysis Board</a></p><p>Took my time, and really rocked this guy with a quality checkmate. I really liked how my light-squared bishop covered everything for a while, allowing me to move my knight into attack and open up my queen for the final checkmate. I finished the game with about 1 minute on the clock.</p>]]></content:encoded>
+            <category>chess</category>
+            <category>time</category>
+            <category>clock</category>
+            <category>600</category>
         </item>
         <item>
             <title><![CDATA[Chasing the King]]></title>
@@ -29,7 +39,12 @@
             <guid>/2022/03/31/chasing-king</guid>
             <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Chased the king around the board and ended up walking him into a MATE!]]></description>
-            <content:encoded><![CDATA[<p>In this game, I kept my cool as the opponent was trying to infiltrate with his queen. I ended up chasing his king around and winning!</p><p><img src="/img/chess/2022-03-31-chasing-king.gif" alt="solid game"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>In this game, I kept my cool as the opponent was trying to infiltrate with his queen. I ended up chasing his king around and winning!</p><p><img loading="lazy" alt="solid game" src="/assets/images/2022-03-31-chasing-king-a4fb2e4c65441dae5fe3ae12a98106ab.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>chasing</category>
+            <category>king</category>
+            <category>queen</category>
+            <category>500</category>
         </item>
         <item>
             <title><![CDATA[I Got Murdered]]></title>
@@ -37,7 +52,11 @@
             <guid>/2022/03/31/i-got-murdered</guid>
             <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Brutal loss I suffered, and what I learned from it]]></description>
-            <content:encoded><![CDATA[<p>This was a tough game. I got murdered by my opponent. This is called the <a href="https://chesspathways.com/chess-openings/kings-pawn-opening/wayward-queen-attack/">Wayward Queen Attack</a>, and to defend it I had to play Nc6 then g6. This forces the queen back, and then if the queen goes back to e3, I play Nf6.</p><p><img src="/img/chess/2022-03-31-i-got-murdered.gif" alt="solid game"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>This was a tough game. I got murdered by my opponent. This is called the <a href="https://chesspathways.com/chess-openings/kings-pawn-opening/wayward-queen-attack/" target="_blank" rel="noopener noreferrer">Wayward Queen Attack</a>, and to defend it I had to play Nc6 then g6. This forces the queen back, and then if the queen goes back to e3, I play Nf6.</p><p><img loading="lazy" alt="solid game" src="/assets/images/2022-03-31-i-got-murdered-8b11e3203d681358ec6b1aeee2b5a124.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>ouch</category>
+            <category>murdered</category>
+            <category>500</category>
         </item>
         <item>
             <title><![CDATA[Playing Solid Chess 2]]></title>
@@ -45,7 +64,10 @@
             <guid>/2022/03/31/solid-game-2</guid>
             <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Solid chess game AGAIN]]></description>
-            <content:encoded><![CDATA[<p>Another incredibly solid game. Did hang a few pawns, but completely destroyed my opponent.</p><p><img src="/img/chess/2022-03-31-solid-game-2.gif" alt="solid game"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Another incredibly solid game. Did hang a few pawns, but completely destroyed my opponent.</p><p><img loading="lazy" alt="solid game" src="/assets/images/2022-03-31-solid-game-2-8c5a66797c483c97e675504cc64ed7d9.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>solid</category>
+            <category>500</category>
         </item>
         <item>
             <title><![CDATA[Playing Solid Chess]]></title>
@@ -53,7 +75,10 @@
             <guid>/2022/03/31/solid-game</guid>
             <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Solid chess game]]></description>
-            <content:encoded><![CDATA[<p>I&#x27;m proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!</p><p><img src="/img/chess/2022-03-31-solid-game.gif" alt="solid game"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>I'm proud of the fact that I played a really solid game. I kept waiting and waiting, and then my opponent moved a bishop protecting the queen and promptly blundered the queen. After taking his queen, he resigned!</p><p><img loading="lazy" alt="solid game" src="/assets/images/2022-03-31-solid-game-e32404196179cb7bd544fbcb11fc2923.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>solid</category>
+            <category>500</category>
         </item>
         <item>
             <title><![CDATA[Stomping]]></title>
@@ -61,7 +86,10 @@
             <guid>/2022/03/28/stomping</guid>
             <pubDate>Mon, 28 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I really liked the checkmate I had on this guy.]]></description>
-            <content:encoded><![CDATA[<p><img src="/img/chess/2022-03-28-stomping.gif" alt="absolute stomping"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p><img loading="lazy" alt="absolute stomping" src="/assets/images/2022-03-28-stomping-82641a7fa68103f7c22196f08ffea2b3.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>gobble</category>
+            <category>500</category>
         </item>
         <item>
             <title><![CDATA[10 Minute vs. measmyself]]></title>
@@ -69,7 +97,10 @@
             <guid>/2022/03/25/vs-measmyself</guid>
             <pubDate>Fri, 25 Mar 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Great game I played where I gobbled up all of his pieces]]></description>
-            <content:encoded><![CDATA[<p>Here is a great game I played recently at around 500! I&#x27;m white, opponent is black.</p><p>I am proud of the move 26 Bishop E5. This moved allowed me to check the Black King, and collect a rook. This move had a discovered check, which then allowed me to take the other rook without losing my bishop. After collecting both rooks and threatening the knight on b4, my opponent resigned.</p><p><img src="/img/chess/2022-03-25-vs-measmyself.gif" alt="game vs measmyself"/></p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Here is a great game I played recently at around 500! I'm white, opponent is black.</p><p>I am proud of the move 26 Bishop E5. This moved allowed me to check the Black King, and collect a rook. This move had a discovered check, which then allowed me to take the other rook without losing my bishop. After collecting both rooks and threatening the knight on b4, my opponent resigned.</p><p><img loading="lazy" alt="game vs measmyself" src="/assets/images/2022-03-25-vs-measmyself-a55e2e58438a49a6d06b72e880d23d53.gif" width="720" height="720" class="img_ev3q"></p>]]></content:encoded>
+            <category>chess</category>
+            <category>gobble</category>
+            <category>500</category>
         </item>
     </channel>
 </rss>

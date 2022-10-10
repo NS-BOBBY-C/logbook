@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[3192],{9415:function(s){s.exports=JSON.parse('{"label":"chess","permalink":"/chess-blog/tags/chess","allTagsPath":"/chess-blog/tags","count":8}')}}]);

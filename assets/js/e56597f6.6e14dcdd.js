@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[9067],{3742:function(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"exercise-blog"}')}}]);

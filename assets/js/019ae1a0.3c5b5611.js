@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklogbook=self.webpackChunklogbook||[]).push([[4031],{6691:function(e){e.exports=JSON.parse('{"label":"running","permalink":"/exercise-blog/tags/running","allTagsPath":"/exercise-blog/tags","count":2}')}}]);
