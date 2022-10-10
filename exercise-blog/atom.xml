@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://robertjcolley.com/exercise-blog</id>
     <title>Robert Colley Blog</title>
-    <updated>2022-06-11T00:00:00.000Z</updated>
+    <updated>2022-10-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://robertjcolley.com/exercise-blog"/>
     <subtitle>Robert Colley Blog</subtitle>
     <icon>https://robertjcolley.com/img/avatar.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Paddy's Pub 5k]]></title>
+        <id>/2022/10/10/paddys-pub</id>
+        <link href="https://robertjcolley.com/exercise-blog/2022/10/10/paddys-pub"/>
+        <updated>2022-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My thoughts, experiences, and stories about the Paddy's Pub 5k]]></summary>
+        <content type="html"><![CDATA[<h2>Race</h2><p>During this race, I started out incredibly strong. I ran the first mile at around a 6 minute per mile pace as I weaved in and out of people. We started behind a good majority of the people and the starting line wasn&#x27;t made for that many people.</p><p>I ended up running a 7:29 minute per mile 5k. This was definitely towards my upper limit at the time - my stomach was all over the place after the race, likely due to caffeine and food eaten before the race.</p><p>This was the first race I&#x27;ve done as a group of friends that I&#x27;ve &quot;won!&quot; Going to CRC has been incredible for my speed and performance on race day.</p><p>For now, I like training with no plan. I really like the 5k race distance honestly because it is right around the distance for a soccer game. My goal is to run a 20 minute 5k and then continue to push it down further and further.</p><p><img src="/img/exercise/paddys-pub/paddys-pub.jpg" alt="Sarah, Dave, and I"/></p>]]></content>
+        <author>
+            <name>Robert Colley</name>
+            <uri>https://github.com/robertjcolley</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Old Port Half Marathon]]></title>
         <id>/2022/06/11/old-port-half-marathon</id>
